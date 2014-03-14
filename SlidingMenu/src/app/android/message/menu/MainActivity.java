@@ -5,8 +5,10 @@ import app.android.message.menu.R;
 import java.util.ArrayList;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
@@ -176,7 +178,7 @@ public class MainActivity extends Activity {
 		case 1:
 			Intent intent =new Intent(this,FindPeopleFragment.class);
 			startActivity(intent);	
-			this.finish();
+			//this.finish();
 			break;
 		case 2:
 			fragment = new PhotosFragment();
@@ -234,6 +236,37 @@ public class MainActivity extends Activity {
 		super.onConfigurationChanged(newConfig);
 		// Pass any configuration change to the drawer toggls
 		mDrawerToggle.onConfigurationChanged(newConfig);
+	}
+	@Override
+	public void onBackPressed() {
+		// TODO Auto-generated method stub
+		AlertDialog.Builder b = new AlertDialog.Builder (MainActivity.this);
+		b.setTitle("Exit Confirm");
+		b.setMessage("Are you sure want to quit?");
+		b.setNegativeButton("No",new DialogInterface.OnClickListener() {
+			
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				// TODO Auto-generated method stub
+				dialog.cancel();
+			}
+		});
+		b.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+			
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				// TODO Auto-generated method stub
+				 
+				Intent intent = new Intent(Intent.ACTION_MAIN);
+				  intent.addCategory(Intent.CATEGORY_HOME);
+				  intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+				  startActivity(intent);
+			        
+
+			}
+		});
+		b.show();
+
 	}
 
 }
