@@ -49,64 +49,85 @@ public final class R {
         public static final int ic_pages=0x7f020008;
         public static final int ic_people=0x7f020009;
         public static final int ic_photos=0x7f02000a;
-        public static final int ic_whats_hot=0x7f02000b;
-        public static final int icon=0x7f02000c;
-        public static final int image_bg=0x7f02000d;
-        public static final int images=0x7f02000e;
-        public static final int list_item_bg_normal=0x7f02000f;
-        public static final int list_item_bg_pressed=0x7f020010;
-        public static final int list_selector=0x7f020011;
+        public static final int ic_signupbackground=0x7f02000b;
+        public static final int ic_whats_hot=0x7f02000c;
+        public static final int icon=0x7f02000d;
+        public static final int image_bg=0x7f02000e;
+        public static final int images=0x7f02000f;
+        public static final int list_item_bg_normal=0x7f020010;
+        public static final int list_item_bg_pressed=0x7f020011;
+        public static final int list_selector=0x7f020012;
     }
     public static final class id {
-        public static final int action_message=0x7f0a000f;
-        public static final int action_settings=0x7f0a000e;
-        public static final int content=0x7f0a000b;
-        public static final int counter=0x7f0a0005;
+        public static final int LastName=0x7f0a0018;
+        public static final int action_message=0x7f0a001e;
+        public static final int action_settings=0x7f0a001d;
+        public static final int btnAdd=0x7f0a0005;
+        public static final int button1=0x7f0a000c;
+        public static final int content=0x7f0a0012;
+        public static final int counter=0x7f0a0008;
         public static final int drawer_layout=0x7f0a0000;
+        public static final int email=0x7f0a001a;
+        public static final int firstName=0x7f0a0017;
         public static final int frame_container=0x7f0a0001;
-        public static final int friend_name=0x7f0a000a;
-        public static final int icon=0x7f0a0003;
-        public static final int list=0x7f0a0007;
-        public static final int list_image=0x7f0a0009;
+        public static final int friend_name=0x7f0a0011;
+        public static final int icon=0x7f0a0006;
+        public static final int label=0x7f0a000a;
+        public static final int list=0x7f0a000e;
+        public static final int list_image=0x7f0a0010;
         public static final int list_slidermenu=0x7f0a0002;
-        public static final int thumbnail=0x7f0a0008;
-        public static final int time_arrival=0x7f0a000c;
-        public static final int title=0x7f0a0004;
-        public static final int txtLabel=0x7f0a0006;
-        public static final int user_name=0x7f0a000d;
+        public static final int listview1=0x7f0a000d;
+        public static final int name=0x7f0a0016;
+        public static final int password=0x7f0a001b;
+        public static final int re_password=0x7f0a001c;
+        public static final int signup=0x7f0a0015;
+        public static final int status=0x7f0a000b;
+        public static final int thumbnail=0x7f0a000f;
+        public static final int time_arrival=0x7f0a0013;
+        public static final int title=0x7f0a0007;
+        public static final int txtGrade=0x7f0a0004;
+        public static final int txtLabel=0x7f0a0009;
+        public static final int txtName=0x7f0a0003;
+        public static final int user_name=0x7f0a0014;
+        public static final int username=0x7f0a0019;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int drawer_list_item=0x7f030001;
-        public static final int fragment_community=0x7f030002;
-        public static final int fragment_find_people=0x7f030003;
-        public static final int fragment_home=0x7f030004;
-        public static final int fragment_message_tab=0x7f030005;
-        public static final int fragment_pages=0x7f030006;
-        public static final int fragment_photos=0x7f030007;
-        public static final int fragment_whats_hot=0x7f030008;
-        public static final int gradient_bg=0x7f030009;
-        public static final int gradient_bg_hover=0x7f03000a;
-        public static final int image_bg=0x7f03000b;
-        public static final int list_row=0x7f03000c;
-        public static final int list_selector=0x7f03000d;
-        public static final int login=0x7f03000e;
+        public static final int add_friend=0x7f030001;
+        public static final int drawer_list_item=0x7f030002;
+        public static final int fragment_community=0x7f030003;
+        public static final int fragment_find_people=0x7f030004;
+        public static final int fragment_home=0x7f030005;
+        public static final int fragment_message_tab=0x7f030006;
+        public static final int fragment_pages=0x7f030007;
+        public static final int fragment_photos=0x7f030008;
+        public static final int fragment_whats_hot=0x7f030009;
+        public static final int gradient_bg=0x7f03000a;
+        public static final int gradient_bg_hover=0x7f03000b;
+        public static final int image_bg=0x7f03000c;
+        public static final int list_row=0x7f03000d;
+        public static final int list_selector=0x7f03000e;
+        public static final int login=0x7f03000f;
+        public static final int signup=0x7f030010;
     }
     public static final class menu {
         public static final int main=0x7f090000;
+        public static final int signup=0x7f090001;
     }
     public static final class string {
         public static final int action_settings=0x7f060001;
         public static final int app_name=0x7f060000;
+        public static final int btn_signup=0x7f06000a;
         /**  Content Description 
          */
-        public static final int desc_list_item_icon=0x7f06000a;
+        public static final int desc_list_item_icon=0x7f06000b;
         public static final int drawer_close=0x7f060004;
         public static final int drawer_open=0x7f060003;
         public static final int hello_world=0x7f060002;
         public static final int login=0x7f060007;
         public static final int message=0x7f060009;
         public static final int password=0x7f060006;
+        public static final int title_activity_signup=0x7f06000c;
         public static final int user_name=0x7f060005;
         public static final int welcome=0x7f060008;
     }

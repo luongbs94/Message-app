@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
 import android.os.Bundle;
@@ -173,7 +174,9 @@ public class MainActivity extends Activity {
 			fragment = new HomeFragment();
 			break;
 		case 1:
-			fragment = new FindPeopleFragment();
+			Intent intent =new Intent(this,FindPeopleFragment.class);
+			startActivity(intent);	
+			this.finish();
 			break;
 		case 2:
 			fragment = new PhotosFragment();
