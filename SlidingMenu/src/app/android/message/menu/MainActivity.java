@@ -141,6 +141,11 @@ public class MainActivity extends Activity {
 		switch (item.getItemId()) {
 		case R.id.action_settings:
 			return true;
+		case R.id.action_message:
+			Fragment frag = new MessageTabFragment();
+			FragmentManager fragmentManager = getFragmentManager();
+			fragmentManager.beginTransaction()
+					.replace(R.id.frame_container, frag).commit();			
 		default:
 			return super.onOptionsItemSelected(item);
 		}
