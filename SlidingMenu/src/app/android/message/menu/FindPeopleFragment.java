@@ -7,12 +7,22 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
 public class FindPeopleFragment extends ListActivity {
+	
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+            Bundle savedInstanceState) {
+ 
+        View rootView = inflater.inflate(R.layout.fragment_message_tab, container, false);
+         
+        return rootView;
+	}
 	
   public void onCreate(Bundle icicle) {
     super.onCreate(icicle);

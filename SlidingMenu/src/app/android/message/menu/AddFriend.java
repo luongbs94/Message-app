@@ -1,23 +1,13 @@
 package app.android.message.menu;
 
-import java.util.ArrayList;
-
-import android.net.Uri;
-import android.os.Bundle;
 import android.app.Activity;
 import android.content.ContentValues;
-import android.content.CursorLoader;
 import android.content.Intent;
-import android.database.Cursor;
+import android.net.Uri;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.Toast;
-
-
-import android.app.ListActivity;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
 
 public class AddFriend extends Activity {
 
