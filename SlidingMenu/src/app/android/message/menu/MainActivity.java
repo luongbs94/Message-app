@@ -174,6 +174,8 @@ public class MainActivity extends Activity {
 		switch (position) {
 		case 0:
 			fragment = new HomeFragment();
+//			Intent i = new Intent (this, HomeFragment.class);
+//			startActivity(i);
 			break;
 		case 1:
 			Intent intent =new Intent(this,FindPeopleFragment.class);

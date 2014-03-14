@@ -1,27 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:layout_marginLeft="10dp"
-    android:layout_marginTop="5dp"
-    android:orientation="vertical" >
-
-   <EditText
-       android:id="@+id/status"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       />
-
-   <Button
-       android:id="@+id/button1"
-       style="?android:attr/buttonStyleSmall"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="OK" />
-   <ListView 
-       android:layout_width="fill_parent"
-       android:layout_height="fill_parent"
-       android:id="@+id/listview1"
-       
-       />
+    android:layout_height="wrap_content"
+	android:orientation="vertical">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:orientation="vertical"
+    >
+	<EditText
+            android:id="@+id/ tvpost"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="What&apos;s on your mind?"
+            android:layout_marginTop="30px" >
+			<requestFocus />
+	</EditText>
+	<Button
+	    android:id="@+id/btpost"
+	    android:layout_width="80dp"
+    	android:layout_height="40dp"
+    	android:text="Post"
+    	android:layout_gravity="right"
+    	android:background="#4682B4"
+    	android:textColor="#FFFFFF"
+	 >   
+	</Button>
+</LinearLayout>
+<ListView
+    android:id="@+id/lvpost"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+</ListView>
 </LinearLayout>

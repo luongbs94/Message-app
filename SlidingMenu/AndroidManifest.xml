@@ -31,7 +31,10 @@
             <meta-data android:name="android.support.PARENT_ACTIVITY"
                 android:value="info.androidhive.slidingmenu.Login" />
         </activity>
-   
+   		<activity
+            android:name="app.android.message.menu.HomeFragment"
+            android:label="@string/app_name" >
+        </activity>
         <activity
             android:name="app.android.message.menu.FindPeopleFragment"
             android:label="@string/app_name" >

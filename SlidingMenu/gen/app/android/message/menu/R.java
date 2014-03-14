@@ -59,37 +59,42 @@ public final class R {
         public static final int list_selector=0x7f020012;
     }
     public static final class id {
-        public static final int LastName=0x7f0a0018;
-        public static final int action_message=0x7f0a001e;
-        public static final int action_settings=0x7f0a001d;
+        public static final int  tvpost=0x7f0a000b;
+        public static final int LastName=0x7f0a001c;
+        public static final int action_message=0x7f0a0023;
+        public static final int action_settings=0x7f0a0022;
         public static final int btnAdd=0x7f0a0005;
-        public static final int button1=0x7f0a000c;
-        public static final int content=0x7f0a0012;
+        public static final int btpost=0x7f0a000c;
+        public static final int button1=0x7f0a0021;
+        public static final int content=0x7f0a0016;
         public static final int counter=0x7f0a0008;
         public static final int drawer_layout=0x7f0a0000;
-        public static final int email=0x7f0a001a;
-        public static final int firstName=0x7f0a0017;
+        public static final int email=0x7f0a001e;
+        public static final int firstName=0x7f0a001b;
         public static final int frame_container=0x7f0a0001;
-        public static final int friend_name=0x7f0a0011;
+        public static final int friend_name=0x7f0a0015;
         public static final int icon=0x7f0a0006;
         public static final int label=0x7f0a000a;
         public static final int list=0x7f0a000e;
-        public static final int list_image=0x7f0a0010;
+        public static final int list_image=0x7f0a0014;
         public static final int list_slidermenu=0x7f0a0002;
-        public static final int listview1=0x7f0a000d;
-        public static final int name=0x7f0a0016;
-        public static final int password=0x7f0a001b;
-        public static final int re_password=0x7f0a001c;
-        public static final int signup=0x7f0a0015;
-        public static final int status=0x7f0a000b;
-        public static final int thumbnail=0x7f0a000f;
-        public static final int time_arrival=0x7f0a0013;
+        public static final int lnlist=0x7f0a000f;
+        public static final int lvpost=0x7f0a000d;
+        public static final int name=0x7f0a001a;
+        public static final int password=0x7f0a001f;
+        public static final int re_password=0x7f0a0020;
+        public static final int signup=0x7f0a0019;
+        public static final int thumbnail=0x7f0a0013;
+        public static final int time_arrival=0x7f0a0017;
         public static final int title=0x7f0a0007;
+        public static final int tvstatus=0x7f0a0012;
+        public static final int tvten=0x7f0a0010;
+        public static final int tvthoigian=0x7f0a0011;
         public static final int txtGrade=0x7f0a0004;
         public static final int txtLabel=0x7f0a0009;
         public static final int txtName=0x7f0a0003;
-        public static final int user_name=0x7f0a0014;
-        public static final int username=0x7f0a0019;
+        public static final int user_name=0x7f0a0018;
+        public static final int username=0x7f0a001d;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -104,11 +109,12 @@ public final class R {
         public static final int fragment_whats_hot=0x7f030009;
         public static final int gradient_bg=0x7f03000a;
         public static final int gradient_bg_hover=0x7f03000b;
-        public static final int image_bg=0x7f03000c;
-        public static final int list_row=0x7f03000d;
-        public static final int list_selector=0x7f03000e;
-        public static final int login=0x7f03000f;
-        public static final int signup=0x7f030010;
+        public static final int home_adapter=0x7f03000c;
+        public static final int image_bg=0x7f03000d;
+        public static final int list_row=0x7f03000e;
+        public static final int list_selector=0x7f03000f;
+        public static final int login=0x7f030010;
+        public static final int signup=0x7f030011;
     }
     public static final class menu {
         public static final int main=0x7f090000;

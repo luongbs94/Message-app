@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:id="@+id/lnlist"
+    >
+    <TextView
+        android:id="@+id/tvten"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="Tên"
+    	android:textColor="#4682B4"
+    	android:paddingTop="10dp"
+    	android:paddingLeft="30dp"
+     >   
+    </TextView>
+    	<TextView
+ 	     android:id="@+id/tvthoigian"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="18:12"
+    	android:textColor="#4682B4"
+    	android:paddingTop="10dp"
+    	android:paddingLeft="60dp"
+ 	 >
+	 </TextView>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="50dp"
+     >
+    <TextView
+        android:id="@+id/tvstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:text="My status"
+        >
+
+        <requestFocus />
+    </TextView>
+</LinearLayout>
+</LinearLayout>
