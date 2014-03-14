@@ -1,5 +1,5 @@
 package app.android.message.menu;
-
+//asfsaf
 import app.android.message.menu.R;
 import android.app.Activity;
 import android.content.Intent;
@@ -28,5 +28,10 @@ public class Login extends Activity {
 	public void sendMessage(View view){
 		Intent intent =new Intent(this,MainActivity.class);
 		startActivity(intent);		
+	}
+	
+	public void signup(View view) {
+		Intent intent = new Intent("android.intent.action.Signup");
+		startActivity(intent);
 	}
 }
