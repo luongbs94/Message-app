@@ -142,11 +142,6 @@ public class MainActivity extends Activity {
 		switch (item.getItemId()) {
 		case R.id.action_settings:
 			return true;
-		case R.id.action_message:
-			Fragment frag = new MessageTabFragment();
-			FragmentManager fragmentManager = getFragmentManager();
-			fragmentManager.beginTransaction()
-					.replace(R.id.frame_container, frag).commit();			
 		default:
 			return super.onOptionsItemSelected(item);
 		}
@@ -182,7 +177,7 @@ public class MainActivity extends Activity {
 			fragment = new PhotosFragment();
 			break;
 		case 3:
-			fragment = new CommunityFragment();
+			fragment = new MessageFragment();
 			break;
 		case 4:
 			fragment = new PagesFragment();

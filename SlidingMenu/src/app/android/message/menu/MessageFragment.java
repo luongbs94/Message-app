@@ -13,12 +13,12 @@ import android.widget.ListView;
 import app.android.message.adapter.MessageListAdapter;
 import app.android.message.model.MessageItem;
 
-public class MessageTabFragment extends Fragment  {
+public class MessageFragment extends Fragment  {
 	private ArrayList<MessageItem> data;
 	ListView list;
 	MessageListAdapter adapter;
 	
-	public MessageTabFragment(){}
+	public MessageFragment(){}
 	
 	@Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

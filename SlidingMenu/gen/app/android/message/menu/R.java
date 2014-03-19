@@ -60,7 +60,6 @@ public final class R {
     }
     public static final class id {
         public static final int LastName=0x7f0a001c;
-        public static final int action_message=0x7f0a0022;
         public static final int action_settings=0x7f0a0021;
         public static final int btnAdd=0x7f0a0005;
         public static final int button1=0x7f0a000c;
