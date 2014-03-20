@@ -9,13 +9,13 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 import app.android.message.menu.R;
-import app.android.message.model.MessageItem;
+import app.android.message.model.MessageItemInList;
 
 public class MessageListAdapter extends BaseAdapter {
-	private ArrayList<MessageItem> data;
+	private ArrayList<MessageItemInList> data;
 	private Activity activity;
 
-	public MessageListAdapter(Activity activity, ArrayList<MessageItem> data){
+	public MessageListAdapter(Activity activity, ArrayList<MessageItemInList> data){
 		this.activity = activity;
 		this.data = data;
 	}
@@ -36,14 +36,14 @@ public class MessageListAdapter extends BaseAdapter {
 		if (convertView == null) {
             LayoutInflater mInflater = (LayoutInflater)
                     activity.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
-            convertView = mInflater.inflate(R.layout.list_row, null);
+            convertView = mInflater.inflate(R.layout.list_row_message, null);
         }
  
         TextView name = (TextView)convertView.findViewById(R.id.friend_name);
         TextView content = (TextView)convertView.findViewById(R.id.content);
         TextView time = (TextView)convertView.findViewById(R.id.time_arrival);
  
-        MessageItem mess = data.get(position);
+        MessageItemInList mess = data.get(position);
  
         // Setting all values in list view
         name.setText(mess.getFriend_name());

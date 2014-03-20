@@ -3,18 +3,21 @@ package app.android.message.menu;
 import java.util.ArrayList;
 
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 import app.android.message.adapter.MessageListAdapter;
-import app.android.message.model.MessageItem;
-
+import app.android.message.message_box.MessageBoxActivity;
+import app.android.message.model.MessageItemInList;
 public class MessageFragment extends Fragment  {
-	private ArrayList<MessageItem> data;
+	private ArrayList<MessageItemInList> data;
 	ListView list;
 	MessageListAdapter adapter;
 	
@@ -32,10 +35,10 @@ public class MessageFragment extends Fragment  {
         super.onActivityCreated(savedInstanceState);  
            
         //add data to ListView  
-        data = new ArrayList<MessageItem>();
-    	data.add(new MessageItem("luong", "good morning", "06:00"));
-    	data.add(new MessageItem("long", "good afternoon", "12:00"));
-    	data.add(new MessageItem("hao", "hi", "12:00")); 
+        data = new ArrayList<MessageItemInList>();
+    	data.add(new MessageItemInList("luong", "good morning", "06:00"));
+    	data.add(new MessageItemInList("long", "good afternoon", "12:00"));
+    	data.add(new MessageItemInList("hao", "hi", "12:00")); 
            
         adapter = new MessageListAdapter(this.getActivity(), data); 
         list = (ListView) getActivity().findViewById(R.id.list);  
@@ -46,7 +49,17 @@ public class MessageFragment extends Fragment  {
             @Override 
             public void onItemClick(AdapterView<?> parent, View view,  
                     int position, long id) {  
-            	//do some things
+                Intent intent = new Intent(getActivity(), MessageBoxActivity.class);
+                TextView tv1 = (TextView) view.findViewById(R.id.content);
+                TextView tv2 = (TextView) view.findViewById(R.id.friend_name);
+                
+                String message = tv1.getText().toString();
+                String friend_name = tv2.getText().toString();
+
+                intent.putExtra("message", message);
+                intent.putExtra("friend_name", friend_name);
+          
+                startActivity(intent);
             }  
         });            
     }  

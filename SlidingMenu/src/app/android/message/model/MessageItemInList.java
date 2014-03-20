@@ -1,11 +1,11 @@
 package app.android.message.model;
 
-public class MessageItem {
+public class MessageItemInList {
 	private String friend_name;
 	private String message_content;
 	private String time_arrival;
 	
-	public MessageItem(String name, String content, String time){
+	public MessageItemInList(String name, String content, String time){
 		friend_name = name;
 		message_content = content;
 		time_arrival = time;

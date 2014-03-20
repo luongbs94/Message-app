@@ -9,14 +9,14 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 import app.android.message.menu.R;
-import app.android.message.model.MessageItem;
+import app.android.message.model.MessageItemInList;
 
 public class HomeListAdapter extends BaseAdapter {
 	
-	private ArrayList<MessageItem> data;
+	private ArrayList<MessageItemInList> data;
 	private Activity activity;
 	
-	public HomeListAdapter(Activity activity, ArrayList<MessageItem> data){
+	public HomeListAdapter(Activity activity, ArrayList<MessageItemInList> data){
 		this.activity = activity;
 		this.data = data ;
 	}
@@ -47,7 +47,7 @@ public class HomeListAdapter extends BaseAdapter {
 	    TextView content = (TextView) view.findViewById(R.id.content1);
 	    TextView time = (TextView) view.findViewById(R.id.time_arrival1);
 	
-        MessageItem mess = data.get(position);
+        MessageItemInList mess = data.get(position);
  
         // Setting all values in list view
         name.setText(mess.getFriend_name());
