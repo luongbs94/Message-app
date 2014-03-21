@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import app.android.message.adapter.HomeListAdapter;
 import app.android.message.menu.R;
-import app.android.message.model.MessageItem;
+import app.android.message.model.MessageItemInList;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -15,7 +15,7 @@ import android.widget.ListView;
 public class HomeFragment extends Fragment {	
 	
 	private ListView list;
-	private ArrayList<MessageItem> data;
+	private ArrayList<MessageItemInList> data;
 	private HomeListAdapter adapter;
 	
 	
@@ -33,10 +33,10 @@ public class HomeFragment extends Fragment {
 	public void onActivityCreated(Bundle savedInstanceState) {
 		super.onActivityCreated(savedInstanceState);
 		
-		data = new ArrayList<MessageItem>();
-		data.add(new MessageItem("luong", "Hello. Today I am happy", "12:00"));
-		data.add(new MessageItem("long", "good afternoon. Today I am worry", "12:00"));
-    	data.add(new MessageItem("hao", "hi. Have a sweet dream ", "12:00")); 
+		data = new ArrayList<MessageItemInList>();
+		data.add(new MessageItemInList("luong", "Hello. Today I am happy", "12:00"));
+		data.add(new MessageItemInList("long", "good afternoon. Today I am worry", "12:00"));
+    	data.add(new MessageItemInList("hao", "hi. Have a sweet dream ", "12:00")); 
 		
 		adapter = new HomeListAdapter(this.getActivity(), data);
 		list = (ListView) getActivity().findViewById(R.id.listview1);
