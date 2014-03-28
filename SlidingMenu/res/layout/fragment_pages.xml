@@ -1,22 +1,167 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    
-    <TextView
-        android:id="@+id/txtLabel"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    > 
+    <LinearLayout
+        android:id="@+id/left"
          android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:textSize="16dp"
-        android:text="Pages View"/>
-    
-    <ImageView android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txtLabel"
-        android:src="@drawable/ic_pages"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"/>
-    
+    	 android:layout_height="fill_parent"
+    	 android:orientation="vertical" 
+    	 android:layout_weight="1"
+        >
+        <LinearLayout 
+            android:id="@+id/top"
+            android:layout_width="fill_parent"
+    	 	android:layout_height="wrap_content"
+    	 	android:orientation="vertical"
+    	 	android:layout_weight="1" 
+    	 	android:background="#AAE2FF"
+            >
+            <TextView 
+                android:id="@+id/one"
+                android:layout_width="fill_parent"
+    	 		android:layout_height="wrap_content"
+    	 		android:layout_weight="1"
+    	 		android:text="Work and education"
+    	 		android:textSize="18dp"
+                />
 
-</RelativeLayout>
+            <TextView
+                android:id="@+id/three"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="University:" />
+
+            <TextView
+                android:id="@+id/four"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="School:" />
+
+        </LinearLayout>
+        <LinearLayout 
+            android:id="@+id/bot"
+            android:layout_width="fill_parent"
+    	 	android:layout_height="wrap_content"
+    	 	android:orientation="vertical" 
+    	 	android:layout_weight="1"
+    	 	android:background="#E6E6E6"
+            >
+
+            <TextView
+                android:id="@+id/one"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Contact infomation"
+                android:textSize="18dp" />
+
+            <TextView 
+                android:id="@+id/two"
+                android:layout_width="fill_parent"
+    	 		android:layout_height="wrap_content"
+    	 		android:layout_weight="1"
+    	 		android:text="Email:"
+                />
+             <TextView 
+                android:id="@+id/three"
+                android:layout_width="fill_parent"
+    	 		android:layout_height="wrap_content"
+    	 		android:layout_weight="1"
+    	 		android:text="MobilePhone:"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    
+    
+    
+    <LinearLayout
+        android:id="@+id/right"
+         android:layout_width="wrap_content"
+    	 android:layout_height="fill_parent"
+    	 android:orientation="vertical" 
+    	 android:layout_weight="1"
+        >
+        <LinearLayout 
+            android:id="@+id/top"
+            android:layout_width="fill_parent"
+    	 	android:layout_height="wrap_content"
+    	 	android:orientation="vertical"
+    	 	android:layout_weight="1" 
+    	 	android:background="#E6E6E6"
+            >
+            <TextView 
+                android:id="@+id/one"
+                android:layout_width="fill_parent"
+    	 		android:layout_height="wrap_content"
+    	 		android:layout_weight="1"
+    	 		android:text="Places Lived"
+    	 		android:textSize="18dp"
+                />
+            <TextView 
+                android:id="@+id/two"
+                android:layout_width="fill_parent"
+    	 		android:layout_height="wrap_content"
+    	 		android:layout_weight="1"
+    	 		android:text="Country:"
+                />
+
+            <TextView
+                android:id="@+id/three"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="City:" />
+
+              <TextView 
+                android:id="@+id/four"
+                android:layout_width="fill_parent"
+    	 		android:layout_height="wrap_content"
+    	 		android:layout_weight="1"
+    	 		android:text="Adress:"
+                />
+        </LinearLayout>
+        <LinearLayout 
+            android:id="@+id/bot"
+            android:layout_width="fill_parent"
+    	 	android:layout_height="wrap_content"
+    	 	android:orientation="vertical" 
+    	 	android:layout_weight="1"
+    	 	android:background="#AAE2FF"
+            >
+             <TextView 
+                android:id="@+id/one"
+                android:layout_width="fill_parent"
+    	 		android:layout_height="wrap_content"
+    	 		android:layout_weight="1"
+    	 		android:text="Basic infomation"
+    	 		android:textSize="18dp"
+                />
+            <TextView 
+                android:id="@+id/two"
+                android:layout_width="fill_parent"
+    	 		android:layout_height="wrap_content"
+    	 		android:layout_weight="1"
+    	 		android:text="Name:"
+                />
+             <TextView 
+                android:id="@+id/three"
+                android:layout_width="fill_parent"
+    	 		android:layout_height="wrap_content"
+    	 		android:layout_weight="1"
+    	 		android:text="Gender:"
+                />
+              <TextView 
+                android:id="@+id/three"
+                android:layout_width="fill_parent"
+    	 		android:layout_height="wrap_content"
+    	 		android:layout_weight="1"
+    	 		android:text="Birthday:"
+                />
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>
